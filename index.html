@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta viewport="width=device-width, initial-scale=1.0" />
+        <title>Coffee Masters</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <img
+                class="header-logo"
+                src="assets/coffee_masters_logo.png"
+                alt="Coffee Masters logo"
+            />
+            <h2 class="header-title">Coffee Masters</h2>
+        </header>
+        <section class="summary-container">
+            <section class="summary-cards">
+                <article class="summary-card items-card">
+                    <h4 class="card-title">items</h4>
+                    <ol class="items-list">
+                        <li class="item">
+                            <p class="quantity">1x</p>
+                            <p class="name">Cappucino</p>
+                            <ol class="modifiers">
+                                <li class="modifier">Light Foam</li>
+                            </ol>
+                            <p class="price">$6.00</p>
+                        </li>
+                        <li class="item">
+                            <p class="quantity">1x</p>
+                            <p class="name">Cappucino</p>
+                            <ol class="modifiers">
+                                <li class="modifier">Almond Milk</li>
+                                <li class="modifier">Double Espresso Shot</li>
+                            </ol>
+                            <p class="price">$7.90</p>
+                        </li>
+                        <li class="item">
+                            <p class="quantity">1x</p>
+                            <p class="name">Croissant</p>
+                            <ol class="modifiers">
+                                <li class="modifier">Butter</li>
+                            </ol>
+                            <p class="price">$5.37</p>
+                        </li>
+                    </ol>
+                </article>
+                <article class="summary-card name-card">
+                    <h4 class="card-title">name</h4>
+                    <div class="summary-rounded-input-container">
+                        <label
+                            for="name-input"
+                            class="summary-rounded-input-label"
+                        >
+                            Name for order
+                        </label>
+                        <input id="name-input" class="summary-rounded-input" />
+                    </div>
+                </article>
+                <article class="summary-card payment-card">
+                    <h4 class="card-title">payment</h4>
+                    <div class="summary-rounded-input-container">
+                        <label
+                            for="card-number-input"
+                            class="summary-rounded-input-label"
+                        >
+                            Card number
+                        </label>
+                        <input
+                            id="card-number-input"
+                            class="summary-rounded-input"
+                        />
+                    </div>
+                    <div
+                        class="summary-rounded-input-container CCV-input-container"
+                    >
+                        <label
+                            for="ccv-number-input"
+                            class="summary-rounded-input-label"
+                        >
+                            CCV number
+                        </label>
+                        <input
+                            id="ccv-number-input"
+                            class="summary-rounded-input"
+                        />
+                    </div>
+                </article>
+            </section>
+            <article class="total-info">
+                <ol class="total-list">
+                    <li>
+                        <p class="total-label">Subtotal:</p>
+                        <p class="total-value">$19.27</p>
+                    </li>
+                    <li>
+                        <p class="total-label">Tax:</p>
+                        <p class="total-value">$0.96</p>
+                    </li>
+                    <li>
+                        <p class="total-label">Total:</p>
+                        <p class="total-value">$20.23</p>
+                    </li>
+                </ol>
+            </article>
+            <button class="order-button">Place Order</button>
+        </section>
+    </body>
+</html>

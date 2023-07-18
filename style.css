@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    --summary-card-bg-color: #eee1d5;
+    --summary-card-heading-color: #885a2d;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+header {
+    background-color: #43281c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    height: 25px;
+    margin-right: 6px;
+}
+
+.header-title {
+    color: #faf2bf;
+}
+
+.summary-container {
+    margin: 30px;
+}
+
+.summary-cards {
+    display: grid;
+    grid-template-areas: 'items name' 'items payment';
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+.summary-card {
+    background-color: var(--summary-card-bg-color);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    padding: 28px 15px 26px;
+}
+
+.card-title {
+    margin: 0;
+    color: var(--summary-card-heading-color);
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+}
+
+.items-card {
+    grid-area: items;
+}
+
+.items-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.item {
+    display: grid;
+    grid-template-areas: 'quantity name price' 'quantity modifiers price';
+    row-gap: 8px;
+    grid-template-columns: 1fr 8fr 1fr;
+    border-bottom: 2px solid #ddb892;
+    padding: 10px 0;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.items-list li p {
+    margin: 0;
+}
+
+.items-list li .quantity {
+    grid-area: quantity;
+}
+
+.items-list li .name {
+    grid-area: name;
+    font-weight: bold;
+}
+
+.items-list li .modifiers {
+    grid-area: modifiers;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.items-list li .modifiers .modifier {
+    font-size: 14px;
+    color: #b08968;
+    padding-bottom: 5px;
+}
+
+.items-list li .price {
+    font-weight: bold;
+}
+
+.name-card {
+    grid-area: name;
+}
+
+.summary-rounded-input-container {
+    position: relative;
+}
+
+.summary-rounded-input {
+    margin: 10px 0;
+    padding: 6px;
+    width: 100%;
+    border: 2px solid var(--summary-card-heading-color);
+    background-color: inherit;
+    border-radius: 100px;
+    text-indent: 20px;
+    font-size: 18px;
+}
+
+.summary-rounded-input-label {
+    position: absolute;
+    top: 3px;
+    left: 25px;
+    background-color: var(--summary-card-bg-color);
+    color: var(--summary-card-heading-color);
+    padding: 0 2px;
+    font-size: 11px;
+}
+
+.payment-card {
+    grid-area: payment;
+}
+
+.CCV-input-container {
+    max-width: 200px;
+}
+
+.total-info {
+    margin-top: 51px;
+}
+
+.total-list {
+    list-style-type: none;
+    width: 476px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.total-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 0;
+}
+
+.total-list li:last-child {
+    font-weight: bold;
+}
+
+.total-list li * {
+    margin: 0;
+}
+
+.order-button {
+    background-color: #deb993;
+    border: none;
+    border-radius: 100px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 30px;
+}
